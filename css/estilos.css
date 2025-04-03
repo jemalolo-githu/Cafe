@@ -1,0 +1,288 @@
+:root {
+    --color-primary: #4a3f35;
+    --color-secondary: #d4a373;
+    --color-background: #faf3e0;
+    --color-white: #ffffff;
+    --font-main: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    background-color: var(--color-background);
+   
+   
+}
+
+h1 { font-size:5rem; }
+h2 {
+    font-size:2rem;
+    text-align:center;
+    color:var(--white);
+}
+h3{
+    color:var(--white); 
+}
+
+header {
+    
+    height: 100vh;
+    display:flex;
+    background-image: url("../img/backgroun-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+.contenedor-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:100%;
+    display: flex;
+}
+
+.texto-header {
+    text-align: center;
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    
+}
+
+.texto-header h1, h2, h3{
+    color:var(--color-white);
+    
+}
+
+
+.navegacion {
+    background-color: var(--color-primary);
+    display: flex;
+   
+    flex-direction: column;
+    align-items:center;
+    
+    position:fixed;
+    top:0;
+    width:100%;
+    
+    
+}
+
+.navegacion a {
+    padding:1rem;
+    font-size:2rem;
+    /* border: 1px solid green; */
+    color: var(--color-background);
+    text-decoration: none;
+    font-weight:bold;
+    
+}
+
+.navegacion a:hover {
+    color: var(--color-secondary);
+    background-color: var(--white);
+}
+
+@media(min-width:550px){
+    .navegacion {
+        flex-direction: row;
+        justify-content:space-around;
+       
+    }
+ 
+ }
+
+section h1 {
+    text-align:center;
+}
+ section h2 {
+    color: var(--color-primary);
+ }
+
+.section-cafes {
+   
+   display:flex;
+   justify-content: space-around;
+   flex-direction: column;
+   text-align:center;
+   align-items:center;
+ 
+   
+}
+
+.h2-nuestrosfavoritos {
+    font-size:3rem;
+}
+
+ .div-cafes {
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    
+}
+
+@media(min-width:1200px){
+    .div-cafes {
+        flex-direction: row;
+        justify-content:space-around;
+       
+    }
+ 
+ }
+
+.div-cafes img {
+    width:100%;
+    height:50%;
+    
+}
+
+.div-cafes :hover {
+    cursor:pointer;
+    /*background-color:red;*/
+
+    position: relative;
+    top:-10px;
+    /*left:10px;*/
+    /*animation: 1.5s ease 0s infinite beat;*/
+    
+   
+    transition: transform 0.3s ease;
+    transition-behavior: normal;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+   
+}
+
+
+
+.marco-cafe {
+    margin:20px;
+    display:block;
+    border-radius: 30px;
+    background-color:var(--color-white);
+    padding:0;
+    overflow:hidden;
+    line-height: 1.6;
+    
+    
+    
+}
+
+
+
+
+.marco-cafe h3 {
+    display:block;
+    font-weight: bold;
+    font-size:2.5rem;
+    color:var(--color-primary);
+    text-align:left;
+    padding-left:20px;
+    
+}
+
+.marco-cafe p {
+    display:block;
+    font-size:2rem;
+    color:var(--color-primary);
+    text-align:left;
+    padding:20px;
+}
+
+
+/*  Contactar */
+
+.section-contactar {
+    background-color: var(--color-secondary);
+    color:var(--color-primary);
+    margin-top:80px;
+    padding:100px;
+    
+}
+
+.section-contactar h2 {
+    font-size:3.5rem;
+}
+
+.formulario {
+    background-color: var(--dark);
+    width:95%;
+    max-width:800px;
+    margin:0 auto;
+    padding:3.4rem;
+    border-radius: 5px;
+}
+
+
+
+.container-input {
+    margin-bottom: 1rem;
+    font-size:2rem;
+}
+
+
+
+.container-input input,
+.container-input textarea {
+    width:100%;
+    padding:1rem;
+    border-radius: 10px;
+    border:none;
+    font-size:1.5rem;
+}
+
+input[type="submit"] {
+    width:100%;
+    border:none;
+    display:block;
+    background-color:var(--color-primary);
+    color:var(--color-white);
+}
+
+
+
+
+
+/*   FOOTER */
+
+footer p{
+    background-color:var(--color-primary);
+    color:var(--color-white);
+    width:100%;
+    margin:0 auto;
+    font-size:2rem;
+    text-align:center;
+    padding-top:20px;
+}
+
+.social-links {
+    display:block;
+    background-color:var(--color-primary);
+    color:var(--color-white);
+    text-align: center;
+    padding: 1rem 0;
+    align-items: center;
+    font-size:3rem;
+}
+
+.social-links img {
+    color:var(--white);
+    text-decoration: none;
+}
+
+.imgsvg {
+   width:50px;
+   height:50px;
+}
